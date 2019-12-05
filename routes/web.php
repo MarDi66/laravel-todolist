@@ -13,4 +13,4 @@
 
 Route::get('/', 'TodosController@index');
 
-Route::resource('todos', 'TodosController');
+Route::resource('todo', 'TodosController');
