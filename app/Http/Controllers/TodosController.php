@@ -42,7 +42,15 @@ class TodosController extends Controller
                 'content' => 'required',
                 'due' => 'required'
             ]
-            );
+        );
+
+        $todo = new Todo();
+        $todo->title = $request->input('title');
+        $todo->content = $request->input('content');
+        $todo->due = $request->input('due');
+        $todo->save();
+
+        return redirect('/')->with('success', 'Todo successfully created!');
     }
 
     /**
