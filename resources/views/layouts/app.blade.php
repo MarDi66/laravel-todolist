@@ -14,6 +14,6 @@
         @yield('content')
     </div>
 
-    <footer class="text-center">Copyright 2019</footer>
+    <footer class="text-center mt-5">Copyright 2019</footer>
 </body>
 </html>
