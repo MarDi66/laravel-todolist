@@ -5,10 +5,10 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="#">Home</a>
+          <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ Request::is('/todo/create') ? 'active' : '' }}" href="todo/create">Create todo</a>
+          <a class="nav-link {{ Request::is('todo/create') ? 'active' : '' }}" href="todo/create">Create todo</a>
         </li>
       </ul>
     </div>
