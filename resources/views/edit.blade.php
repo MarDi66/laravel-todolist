@@ -4,6 +4,7 @@
     <h1>Edit todo</h1>
     <form method="POST" action="/todo">
         @csrf
+        @method('PUT')
         <div class="form-group">
             <label for="title">Title</label>
             <input type="text" class="form-control" name="title" id="title" placeholder="Enter title" value=" {{ $todo->title }} ">
