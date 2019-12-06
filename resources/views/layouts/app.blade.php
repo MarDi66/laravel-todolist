@@ -8,6 +8,7 @@
     <title>Todos list</title>
 </head>
 <body>
+        @include('inc.navbar')
     <div class="container">
         @yield('content')
     </div>
